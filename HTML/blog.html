@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/blog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../JS/blog.js"></script>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+  </head>
+  <body class='background'>
+    <div id="page-container">
+    <div id="content-wrap">
+    <ul class="topnav" id="myTopnav">
+      <div class="logobox"><a onclick="window.location.href = 'index.html'"><img src="../Images/logo.png" style="width:150px;height:47px";></a></div>
+      <div class = "hamburgermen">
+      <!--<li><a href="#">About</a></li>-->
+      <li , style="font-size:12px;">
+       <div class="dropdown">
+        <button class="dropbtn" style="font-size:16px; font-family:serif;" onclick="window.location.href = 'blog.html'">Blog</button>
+        </div>
+      </li>
+      <li , style="font-size:12px;">
+       <div class="dropdown">
+        <button class="dropbtn" style="font-size:16px; font-family:serif;" onclick="window.location.href = 'contact.html'">Contact</button>
+        </div>
+      </li>
+    </div>
+<a href="#" onclick="myFunction();return false;" class="icon">
+  <i class="fa fa-bars"></i>
+</a>
+    </ul>
+    <div class= content-container><!--content container-->
+      <div class= content><!--content-->
+              <div class=post>
+                <h1>Punjabi Suba Lehar</h1>
+                <p> First Chapter</p>
+                <p>
+                  <button href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click Here</button>
+                  <div id="id01" class="modal">
+                    <div class="modal-content animate" action="/action_page.php" method="post">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <div class="container">
+                          <object class=pdfsize data="../PDF/Chapter 1- Punjabi Suba Lehar.pdf" type="application/pdf">
+                          <embed src="../PDF/Chapter 1- Punjabi Suba Lehar.pdf" type="application/pdf" />
+                          </object>
+                        </div>
+
+                    </div>
+                </div>
+                </p>
+              </div><!--post2-->
+      </div><!--content-->
+    </div><!--content container-->
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+  </div><!--content wrap-->
+
+<!--footer-->
+    <footer id="footer">Company Name &copy 2020</footer>
+  </div><!--page container-->
+  </body>
+</html>
